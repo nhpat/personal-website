@@ -154,6 +154,23 @@
   }
 }
 
+.typing-cursor::after {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 0.9em;
+  margin-left: 2px;
+  background: currentColor;
+  vertical-align: text-bottom;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 .modal-backdrop {
   position: fixed;
   inset: 0;
